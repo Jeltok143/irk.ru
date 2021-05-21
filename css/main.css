@@ -212,7 +212,7 @@
   align-items: center; }
 
 .swiper-button-prev {
-  background-image: url(../../img/icons/right-arrow.png);
+  background-image: url(../img/icons/right-arrow.png);
   background-repeat: no-repeat;
   width: 35px;
   height: 35px;
@@ -229,7 +229,7 @@
       background-size: 25px 25px; } }
 
 .swiper-button-next {
-  background-image: url(../../img/icons/right-arrow.png);
+  background-image: url(../img/icons/right-arrow.png);
   background-repeat: no-repeat;
   width: 35px;
   height: 35px; }
