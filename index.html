@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Афиша Иркутска на IRK.ru</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+  <header class="header">
+  <div class="container">
+
+    <div class="header__nav">
+
+      <a href="index.html" class="header__link">
+        <svg class="header__link-logo">
+          <use xlink:href="#logo-site"></use>
+        </svg>
+      </a>
+
+      <div class="header__nav-item">
+        <a href="#" class="header__nav-link">Новости</a>
+      </div>
+
+      <div class="header__nav-item">
+        <a href="#" class="header__nav-link">Статьи</a>
+      </div>
+
+      <div class="header__nav-item">
+        <a href="#" class="header__nav-link">COVID-19</a>
+      </div>
+
+      <div class="header__nav-item header__nav-item--active">
+        <a href="#" class="header__nav-link">Афиша</a>
+      </div>
+      
+      <div class="header__nav-item">
+        <a href="#" class="header__nav-link">Погода</a>
+      </div>
+
+      <div class="header__nav-item">
+        <a href="#" class="header__nav-link">Туризм</a>
+      </div>
+
+      <div class="header__nav-item">
+        <a href="#" class="header__nav-link">Обед</a>
+      </div>
+
+      <div class="header__nav-item">
+        <a href="#" class="header__nav-link">Тесты</a>
+      </div>
+
+      <div class="header__nav-item">
+        <a href="#" class="header__nav-link">Спецпроекты</a>
+      </div>
+
+      <div class="header__nav-item">
+        <a href="#" class="header__nav-link">Реклама</a>
+      </div>
+
+      <div class="header__nav-avatar">
+        <a href="#" class="header__avatar-link">
+          <svg class="header__avatar-icon">
+            <use xlink:href="#avatar-logo"></use>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <svg display="none">
+    <symbol id="logo-site" viewBox="0 0 52 20">
+      <path d="M2.88657986e-15,19.8883333 L3.9018498,19.8883333 L3.9018498,0.05125 L2.88657986e-15,0.05125 L2.88657986e-15,19.8883333 Z M12.6682688,4.81833333 C12.2121897,2.93875 9.57724901,3.28041667 9.57724901,3.28041667 L9.57724901,8.50854167 C9.5936917,8.506875 9.61054545,8.506875 9.62781028,8.50895833 C10.2191304,8.57729167 10.9791937,8.543125 11.7055494,8.15 C12.4316996,7.75708333 13.1243478,6.69770833 12.6682688,4.81833333 L12.6682688,4.81833333 Z M13.0230198,19.8883333 L9.62287747,10.6604167 L9.57724901,10.6489583 L9.57724901,19.8883333 L5.67539921,19.8883333 L5.67539921,0.05125 L9.42515415,0.05125 C9.42515415,0.05125 11.9250593,-2.59514632e-15 13.6309881,0.66625 C15.3371225,1.33270833 16.7559209,3.14375 16.4687905,6.45854167 C16.2011858,9.54729167 14.0568538,10.7516667 13.7654071,10.9014583 L17.0767589,19.8883333 L13.0230198,19.8883333 Z M25.8431779,19.8883333 L22.0934229,9.55708333 L22.0934229,19.8883333 L18.1915731,19.8883333 L18.1915731,0 L22.0934229,0 L22.0934229,8.998125 L25.3365375,0.05125 L29.3397154,0.05125 L25.6912885,9.27770833 L29.8463557,19.8883333 L25.8431779,19.8883333 Z" fill="#FFFFFF"></path>
+      <path d="M51.7876838,17.0691667 C51.7876838,17.0691667 51.6187352,18.248125 50.5715415,19.119375 C49.7787984,19.7791667 48.4736601,19.85125 47.885834,19.8472917 C47.2980079,19.85125 45.9930751,19.7791667 45.2001265,19.119375 C44.1529328,18.248125 43.9839842,17.0691667 43.9839842,17.0691667 L43.8826561,6.20229167 L46.5178024,6.20229167 L46.6191304,16.4027083 C46.6191304,16.4027083 46.8049328,17.39375 47.6831779,17.4279167 C47.7559368,17.4308333 47.8223241,17.4347917 47.885834,17.439375 C47.9495494,17.4347917 48.0157312,17.4308333 48.0884901,17.4279167 C48.9669407,17.39375 49.1527431,16.4027083 49.1527431,16.4027083 L49.2540711,6.20229167 L51.8890119,6.20229167 L51.7876838,17.0691667 Z" fill="#F4C839"></path>
+      <path d="M41.5973281,13.6539583 L43.8826561,19.8883333 L41.0900711,19.8883333 L38.7428775,13.485 L38.7163636,13.4783333 L38.7163636,19.8883333 L36.0283953,19.8883333 L36.0283953,6.20333333 L38.6115415,6.20333333 C38.6115415,6.20333333 40.3337075,6.168125 41.5089486,6.625625 C42.6841897,7.083125 43.6617075,8.32625 43.4637787,10.601875 C43.2781818,12.7372917 41.7810751,13.560625 41.5973281,13.6539583 Z M40.8456917,9.47583333 C40.5316364,8.185625 38.7163636,8.42020833 38.7163636,8.42020833 L38.7163636,12.0091667 C38.727668,12.008125 38.7391779,12.0079167 38.7513043,12.009375 C39.1584664,12.05625 39.682166,12.0327083 40.1824348,11.7629167 C40.6829091,11.4933333 41.1599526,10.7660417 40.8456917,9.47583333 Z" fill="#F4C839"></path>
+      <path d="M32.7854862,19.8370833 C31.9179289,19.8370833 31.2145929,19.125625 31.2145929,18.248125 C31.2145929,17.3704167 31.9179289,16.6589583 32.7854862,16.6589583 C33.6530435,16.6589583 34.3561739,17.3704167 34.3561739,18.248125 C34.3561739,19.125625 33.6530435,19.8370833 32.7854862,19.8370833 L32.7854862,19.8370833 Z" fill="#F4C839"></path>
+    </symbol>
+    <symbol id="avatar-logo" viewBox="0 0 512 512">
+      <linearGradient xmlns="http://www.w3.org/2000/svg" id="a" gradientTransform="matrix(1 0 0 -1 0 -19430)" gradientUnits="userSpaceOnUse" x1="0" x2="512" y1="-19686" y2="-19686"><stop stop-opacity="1" stop-color="#00f38d" offset="0"/><stop stop-opacity="1" stop-color="#0099ff" offset="0"/></linearGradient>
+      <path xmlns="http://www.w3.org/2000/svg" d="m512 256c0 141.386719-114.613281 256-256 256s-256-114.613281-256-256 114.613281-256 256-256 256 114.613281 256 256zm0 0" fill="url(#a)" data-original="url(#a)" style=""/>
+      <path xmlns="http://www.w3.org/2000/svg" d="m314.203125 247.9375c23.515625-17.710938 38.75-45.851562 38.75-77.488281 0-53.457031-43.492187-96.949219-96.953125-96.949219-53.457031 0-96.949219 43.492188-96.949219 96.949219 0 31.636719 15.230469 59.777343 38.746094 77.488281-62.960937 23.632812-107.894531 84.445312-107.894531 155.5625h30c0-75.046875 61.054687-136.097656 136.101562-136.097656 75.042969 0 136.097656 61.050781 136.097656 136.097656h30c-.003906-71.117188-44.933593-131.929688-107.898437-155.5625zm-125.152344-77.488281c0-36.917969 30.03125-66.949219 66.949219-66.949219s66.949219 30.03125 66.949219 66.949219-30.03125 66.953125-66.949219 66.953125-66.949219-30.035156-66.949219-66.953125zm0 0" fill="#ffffff" data-original="#ffffff" style="" class=""/>
+    </symbol>
+  </svg>
+</header>
+
+
+  <div class="container">
+    <div class="main__nav">
+
+      <div class="main__nav-left">
+        <div class="main__nav-item main__nav-item--active">
+          <a href="#" class="main__nav-link">Главное</a>
+        </div>
+
+        <div class="main__nav-item">
+          <a href="#" class="main__nav-link">Кино</a>
+        </div>
+
+        <div class="main__nav-item">
+          <a href="#" class="main__nav-link">Концерты</a>
+        </div>
+
+        <div class="main__nav-item">
+          <a href="#" class="main__nav-link">Театр</a>
+        </div>
+
+        <div class="main__nav-item">
+          <a href="#" class="main__nav-link">Выставки</a>
+        </div>
+
+        <div class="main__nav-item">
+          <a href="#" class="main__nav-link">Другое</a>
+        </div>
+
+        <div class="main__nav-item">
+          <a href="#" class="main__nav-link">Места</a>
+        </div>
+
+        <button class="main__nav-search">
+          <svg class="main__search-icon">
+            <use xlink:href="#main-search"></use>
+          </svg>
+        </button>
+      </div><!-- ./main__nav-left -->
+
+      <div class="main__nav-right">
+        <a href="#" class="main__nav-word">Скоро</a>
+        <button class="main__nav-btn">
+          <a href="#" class="main__btn-link">Добавить событие</a>
+        </button>
+      </div><!-- ./main__nav-right -->
+
+    </div><!-- ./main__nav -->
+  </div>
+
+  <div class="main__slider">
+
+    <div class="swiper-container">
+      <!-- Additional required wrapper -->
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+
+        <div class="swiper-slide">
+          <a href="#">
+            <div class="slider__poster-wrapper">
+              <img src="img/slides/slide-2.jpg" alt="photo" class="slider__poster-photo">
+
+              <div class="slider__poster-info">
+                <h2 class="slider__poster-title">Баста</h2>
+                <h3 class="slider__poster-desc">Большой концерт в ледовом дворце «Айсберг».</h3>
+              </div>
+
+              <div class="slider__poster-bottom">
+
+                <h2 class="slider__poster-number">17</h2>
+
+                <div class="slider__poster-date">
+                  <h3 class="slider__poster-mounth">Июня</h3>
+                  <h3 class="slider__poster-day">Четверг</h3>
+                </div>
+
+                <h2 class="slider__poster-time">19:00</h2>
+
+                <div class="slider__poster-link slider__poster-link--type-1">Купить билет</div>
+
+              </div>
+
+            </div>
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="#">
+            <div class="slider__poster-wrapper">
+              <img src="img/slides/slide-1.jpg" alt="photo" class="slider__poster-photo">
+
+              <div class="slider__poster-info">
+                <h2 class="slider__poster-title">Кипелов. Концерт с оркестром</h2>
+                <h3 class="slider__poster-desc">Лучшие песни группы под сопровождение симфонического оркестра.</h3>
+              </div>
+
+              <div class="slider__poster-bottom">
+
+                <h2 class="slider__poster-number">11</h2>
+
+                <div class="slider__poster-date">
+                  <h3 class="slider__poster-mounth">Июня</h3>
+                  <h3 class="slider__poster-day">Пятница</h3>
+                </div>
+
+                <h2 class="slider__poster-time">19:00</h2>
+
+                <div class="slider__poster-link slider__poster-link--type-2">Концерты</div>
+
+              </div>
+
+            </div>
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="#">
+            <div class="slider__poster-wrapper">
+              <img src="img/slides/slide-8.jpg" alt="photo" class="slider__poster-photo">
+
+              <div class="slider__poster-info">
+                <h2 class="slider__poster-title">Сергей Лазарев</h2>
+                <h3 class="slider__poster-desc">Большой концерт в ледовом дворце «Айсберг».</h3>
+              </div>
+
+              <div class="slider__poster-bottom">
+
+                <h2 class="slider__poster-number">26</h2>
+
+                <div class="slider__poster-date">
+                  <h3 class="slider__poster-mounth">Июня</h3>
+                  <h3 class="slider__poster-day">Суббота</h3>
+                </div>
+
+                <h2 class="slider__poster-time">19:00</h2>
+
+                <div class="slider__poster-link slider__poster-link--type-2">Концерты</div>
+
+              </div>
+
+            </div>
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="#">
+            <div class="slider__poster-wrapper">
+              <img src="img/slides/slide-10.jpg" alt="photo" class="slider__poster-photo">
+
+              <div class="slider__poster-info">
+                <h2 class="slider__poster-title">Ramil’</h2>
+                <h3 class="slider__poster-desc">Смелый и резкий поп, представляющий новейшую волну российской поп-музыки.</h3>
+              </div>
+
+              <div class="slider__poster-bottom">
+
+                <h2 class="slider__poster-number">4</h2>
+
+                <div class="slider__poster-date">
+                  <h3 class="slider__poster-mounth">Июня</h3>
+                  <h3 class="slider__poster-day">Пятница</h3>
+                </div>
+
+                <h2 class="slider__poster-time">19:00</h2>
+
+                <div class="slider__poster-link slider__poster-link--type-2">Концерты</div>
+
+              </div>
+
+            </div>
+          </a>
+        </div>
+        
+        <div class="swiper-slide">
+          <a href="#">
+            <div class="slider__poster-wrapper">
+              <img src="img/slides/slide-6.jpg" alt="photo" class="slider__poster-photo">
+              
+              <div class="slider__poster-info">
+                <h2 class="slider__poster-title">Как провести выходные: сажаем деревья и любуемся сакурой</h2>
+                <h3 class="slider__poster-desc">Обзор афиши Иркутска на 22 и 23 мая.</h3>
+              </div>
+              
+              <div class="slider__poster-bottom">
+                
+                <div class="slider__poster-link slider__poster-link--type-2">Обзор</div>
+                
+              </div>
+              
+            </div>
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="#">
+            <div class="slider__poster-wrapper">
+              <img src="img/slides/slide-5.jpg" alt="photo" class="slider__poster-photo">
+
+              <div class="slider__poster-info">
+                <h2 class="slider__poster-title">Mary Gu</h2>
+                <h3 class="slider__poster-desc">Певица, покорившая индустрию своими проникновенными текстами и чувственным вокалом, презентует свой новый альбом в Иркутске.</h3>
+              </div>
+
+              <div class="slider__poster-bottom">
+
+                <h2 class="slider__poster-number">25</h2>
+
+                <div class="slider__poster-date">
+                  <h3 class="slider__poster-mounth">мая</h3>
+                  <h3 class="slider__poster-day">Четверг</h3>
+                </div>
+
+                <h2 class="slider__poster-time">20:00</h2>
+
+                <div class="slider__poster-link slider__poster-link--type-2">Концерты</div>
+
+              </div>
+
+            </div>
+          </a>
+        </div>
+        
+        <div class="swiper-slide">
+          <a href="#">
+            <div class="slider__poster-wrapper">
+              <img src="img/slides/slide-3.jpg" alt="photo" class="slider__poster-photo">
+
+              <div class="slider__poster-info">
+                <h2 class="slider__poster-title">Территория. Иркутск</h2>
+                <h3 class="slider__poster-desc">Фестиваль современного искусства. Впервые в Иркутске!</h3>
+              </div>
+
+              <div class="slider__poster-bottom">
+
+                <h2 class="slider__poster-number">21</h2>
+
+                <div class="slider__poster-date">
+                  <h3 class="slider__poster-mounth">мая</h3>
+                  <h3 class="slider__poster-day">Пятница/h3>
+                </div>
+
+                <h2 class="slider__poster-time">19:00</h2>
+
+                <div class="slider__poster-link slider__poster-link--type-2">Театр</div>
+
+              </div>
+
+            </div>
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="#">
+            <div class="slider__poster-wrapper">
+              <img src="img/slides/slide-9.jpg" alt="photo" class="slider__poster-photo">
+
+              <div class="slider__poster-info">
+                <h2 class="slider__poster-title">Вячеслав Бутусов</h2>
+                <h3 class="slider__poster-desc">С программой «Аллилуйя». Хиты Nautilus Pompilius.</h3>
+              </div>
+
+              <div class="slider__poster-bottom">
+
+                <h2 class="slider__poster-number">14</h2>
+
+                <div class="slider__poster-date">
+                  <h3 class="slider__poster-mounth">Июня</h3>
+                  <h3 class="slider__poster-day">понедельник</h3>
+                </div>
+
+                <h2 class="slider__poster-time">19:00</h2>
+
+                <div class="slider__poster-link slider__poster-link--type-2">Концерты</div>
+
+              </div>
+
+            </div>
+          </a>
+        </div>
+
+        <div class="swiper-slide">
+          <a href="#">
+            <div class="slider__poster-wrapper">
+              <img src="img/slides/slide-4.jpg" alt="photo" class="slider__poster-photo">
+
+              <div class="slider__poster-info">
+                <h2 class="slider__poster-title">Максим Аверин. Научи меня жить</h2>
+                <h3 class="slider__poster-desc">Артист представит моноспектакль в Иркутске и Ангарске.</h3>
+              </div>
+
+              <div class="slider__poster-bottom">
+
+                <h2 class="slider__poster-number">2</h2>
+
+                <div class="slider__poster-date">
+                  <h3 class="slider__poster-mounth">Июня</h3>
+                  <h3 class="slider__poster-day">среда</h3>
+                </div>
+
+                <h2 class="slider__poster-time">19:00</h2>
+
+                <div class="slider__poster-link slider__poster-link--type-2">Театр</div>
+
+              </div>
+
+            </div>
+          </a>
+        </div>
+
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper__buttons">
+        <button class="swiper-button-prev"></button>
+        <button class="swiper-button-next"></button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <svg display="none">
+    <symbol id="main-search" viewBox="0 0 192.904 192.904">
+      <path d="M190.707,180.101l-47.078-47.077c11.702-14.072,18.752-32.142,18.752-51.831C162.381,36.423,125.959,0,81.191,0
+      C36.422,0,0,36.423,0,81.193c0,44.767,36.422,81.187,81.191,81.187c19.688,0,37.759-7.049,51.831-18.751l47.079,47.078
+      c1.464,1.465,3.384,2.197,5.303,2.197c1.919,0,3.839-0.732,5.304-2.197C193.637,187.778,193.637,183.03,190.707,180.101z M15,81.193
+      C15,44.694,44.693,15,81.191,15c36.497,0,66.189,29.694,66.189,66.193c0,36.496-29.692,66.187-66.189,66.187
+      C44.693,147.38,15,117.689,15,81.193z" />
+    </symbol>
+  </svg>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
