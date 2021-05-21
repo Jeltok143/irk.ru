@@ -15,6 +15,9 @@ var swiper = new Swiper('.swiper-container', {
     clickable: true,
     draggable: true
   },
+  autoplay: {
+    delay: 5000
+  },
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',

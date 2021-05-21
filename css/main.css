@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   background-color: #09f;
   height: 50px; }
@@ -247,6 +248,9 @@
 
 .swiper-container {
   padding-bottom: 50px; }
+  @media (max-width: 768px) {
+    .swiper-container {
+      padding-bottom: 0; } }
 
 .swiper-container-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-custom,
@@ -385,5 +389,158 @@
     .slider__poster-link {
       padding: .3rem .8rem;
       font-size: 1.1rem; } }
+
+.soon {
+  background-color: #f1f1f1;
+  padding-top: 4rem;
+  padding-bottom: 2rem; }
+  @media (max-width: 768px) {
+    .soon {
+      padding-top: 1rem; } }
+
+.soon__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -2rem; }
+  @media (max-width: 1199px) {
+    .soon__inner {
+      justify-content: center; } }
+
+.soon__title {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  color: #000; }
+
+.soon__inner-item {
+  width: calc(25% - 20px);
+  margin-right: 2rem;
+  margin-bottom: 2rem; }
+  @media (max-width: 1199px) {
+    .soon__inner-item {
+      margin-right: 3rem;
+      margin-bottom: 1rem; } }
+  @media (max-width: 991px) {
+    .soon__inner-item {
+      width: calc(33.33333% - 10px); } }
+  @media (max-width: 768px) {
+    .soon__inner-item {
+      width: calc(40% - 10px); } }
+  @media (max-width: 499px) {
+    .soon__inner-item {
+      width: 100%;
+      margin-right: 2rem; } }
+
+.soon__inner-wrapper {
+  position: relative; }
+  .soon__inner-wrapper::after {
+    content: 'Купить билет';
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: #fff;
+    background-color: #ee721a;
+    padding: .8rem 1.3rem;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    z-index: 2; }
+    @media (max-width: 1199px) {
+      .soon__inner-wrapper::after {
+        font-size: 1.3rem;
+        padding: .6rem 1.1rem; } }
+    @media (max-width: 991px) {
+      .soon__inner-wrapper::after {
+        font-size: 1rem;
+        padding: .4rem .9rem; } }
+    @media (max-width: 768px) {
+      .soon__inner-wrapper::after {
+        font-size: .9rem;
+        padding: .3rem .8rem; } }
+  .soon__inner-wrapper:hover::after {
+    background-color: #f1751d; }
+
+.soon__item-title {
+  position: relative;
+  margin-top: 1.2rem;
+  display: flex; }
+  .soon__item-title > a {
+    color: #000;
+    font-size: 1.6rem;
+    margin-right: 1rem;
+    width: 90%;
+    font-weight: 700; }
+    .soon__item-title > a:hover {
+      color: red; }
+    @media (max-width: 1199px) {
+      .soon__item-title > a {
+        font-size: 1.5rem; } }
+    @media (max-width: 991px) {
+      .soon__item-title > a {
+        font-size: 1.4rem; } }
+    @media (max-width: 768px) {
+      .soon__item-title > a {
+        font-size: 1.3rem; } }
+    @media (max-width: 499px) {
+      .soon__item-title > a {
+        font-size: 1.5em; } }
+
+.soon__comments-link {
+  display: flex;
+  align-items: center; }
+  .soon__comments-link:hover > .soon__item-icon {
+    fill: red; }
+  .soon__comments-link:hover > .soon__comments-count {
+    color: red; }
+
+.soon__item-icon {
+  fill: #999999;
+  height: 15px;
+  width: 15px;
+  margin-right: 1rem; }
+
+.soon__comments-count {
+  color: #999999;
+  font-size: 1.6rem;
+  font-weight: 400; }
+  @media (max-width: 1199px) {
+    .soon__comments-count {
+      font-size: 1.5rem; } }
+  @media (max-width: 991px) {
+    .soon__comments-count {
+      font-size: 1.4rem; } }
+  @media (max-width: 768px) {
+    .soon__comments-count {
+      font-size: 1.3rem; } }
+
+.soon__item-age {
+  position: absolute;
+  right: 0;
+  padding: 2px 3px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #9c9c9c;
+  border: 1px solid #9c9c9c;
+  border-radius: 2px; }
+
+.soon__inner-load {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center; }
+
+.soon__inner-btn {
+  background-color: #0095fc;
+  width: 100%;
+  max-width: 580px;
+  padding: 1.1rem 0rem;
+  color: #fff;
+  border: none;
+  font-size: 1.6rem;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  cursor: pointer; }
+  .soon__inner-btn:hover {
+    background: #0c87db;
+    border-color: #0c87db; }
 
 /*# sourceMappingURL=main.css.map */
