@@ -427,7 +427,7 @@
       width: calc(40% - 10px); } }
   @media (max-width: 499px) {
     .soon__inner-item {
-      width: 100%;
+      width: calc(95% - 40px);
       margin-right: 2rem; } }
 
 .soon__inner-wrapper {
@@ -459,6 +459,8 @@
         padding: .3rem .8rem; } }
   .soon__inner-wrapper:hover::after {
     background-color: #f1751d; }
+  .soon__inner-wrapper:hover .soon__item-title > a {
+    color: red; }
 
 .soon__item-title {
   position: relative;
