@@ -427,7 +427,7 @@
       width: calc(40% - 10px); } }
   @media (max-width: 499px) {
     .soon__inner-item {
-      width: calc(95% - 40px);
+      width: calc(70% - 40px);
       margin-right: 2rem; } }
 
 .soon__inner-wrapper {
