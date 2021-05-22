@@ -497,8 +497,11 @@
       width: calc(40% - 10px); } }
   @media (max-width: 499px) {
     .tabs__inner-item {
-      width: calc(70% - 40px);
+      width: calc(100% - 40px);
       margin-right: 2rem; } }
+
+.tabs__inner-img {
+  min-width: 100%; }
 
 .tabs__inner-wrapper {
   position: relative; }
