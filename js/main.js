@@ -24,7 +24,12 @@ var swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev'
   },
   mousewheel: {
-    invert: true
+    invert: false,
+    forceToAxis: false,
+    sensitivity: 1,
+    releaseOnEdges: true,
+    thresholdDelta: 1,
+    thresholdTime: 1
   },
   breakpoints: {
     320: {
