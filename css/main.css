@@ -734,4 +734,108 @@
     background: #0c87db;
     border-color: #0c87db; }
 
+.footer {
+  background-color: #202020; }
+
+.footer__social {
+  padding-top: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 3.5rem;
+  border-bottom: solid 4px #555; }
+  @media (max-width: 499px) {
+    .footer__social {
+      padding-bottom: 1.5rem; } }
+
+.footer__social-inner {
+  display: flex; }
+  @media (max-width: 768px) {
+    .footer__social-inner {
+      width: 100%;
+      justify-content: center; } }
+
+.footer__social-links {
+  display: flex; }
+  @media (max-width: 768px) {
+    .footer__social-links {
+      width: 100%;
+      justify-content: center; } }
+
+.footer__social-inner {
+  margin-bottom: 1.5rem; }
+
+.footer__social-item {
+  margin: 0rem 1.1rem; }
+
+.footer__social-icon {
+  width: 20px;
+  height: 20px;
+  fill: #fff; }
+  @media (max-width: 768px) {
+    .footer__social-icon {
+      width: 18px;
+      height: 18px; } }
+
+.footer__likns-item {
+  color: #fff;
+  font-size: 1.4rem;
+  padding-left: 1rem; }
+  .footer__likns-item:first-child {
+    padding-right: 0; }
+  @media (max-width: 768px) {
+    .footer__likns-item {
+      font-size: 1.2rem; } }
+  @media (max-width: 499px) {
+    .footer__likns-item {
+      font-size: 1rem; } }
+
+.footer__info {
+  margin-top: 1.5rem; }
+
+.footer__info-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem; }
+  @media (max-width: 499px) {
+    .footer__info-item {
+      margin-right: 0; } }
+
+.footer__info {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 3.5rem; }
+
+.footer__info-link {
+  color: #dedede;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem; }
+  .footer__info-link:hover {
+    color: #fff; }
+
+.footer__info-left {
+  display: flex; }
+  @media (max-width: 768px) {
+    .footer__info-left {
+      width: 100%;
+      justify-content: center; } }
+  @media (max-width: 499px) {
+    .footer__info-left {
+      flex-direction: column;
+      justify-content: center;
+      text-align: left; } }
+
+.footer__conf {
+  display: flex;
+  flex-direction: column;
+  width: 35%; }
+  @media (max-width: 768px) {
+    .footer__conf {
+      width: 100%;
+      justify-content: center; } }
+
+.footer__info-text {
+  font-size: 1.4rem;
+  color: #5a5a5a; }
+
 /*# sourceMappingURL=main.css.map */
