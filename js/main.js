@@ -23,14 +23,6 @@ var swiper = new Swiper('.swiper-container', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
   },
-  mousewheel: {
-    invert: false,
-    forceToAxis: false,
-    sensitivity: 1,
-    releaseOnEdges: true,
-    thresholdDelta: 1,
-    thresholdTime: 1
-  },
   breakpoints: {
     320: {
       slidesPerView: 1
@@ -41,6 +33,10 @@ var swiper = new Swiper('.swiper-container', {
     1799: {
       slidesPerView: 3
     }
+  },
+  mousewheel: {
+    sensitivity: 1,
+    eventsTarget: ".swiper-slide"
   }
 });
 //# sourceMappingURL=main.js.map
