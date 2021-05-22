@@ -613,8 +613,11 @@
       width: calc(40% - 10px); } }
   @media (max-width: 499px) {
     .soon__inner-item {
-      width: calc(70% - 40px);
+      width: calc(100% - 40px);
       margin-right: 2rem; } }
+
+.soon__inner-img {
+  min-width: 100%; }
 
 .soon__inner-wrapper {
   position: relative; }
