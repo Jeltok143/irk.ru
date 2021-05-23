@@ -1,7 +1,10 @@
 @charset "UTF-8";
 .header {
   background-color: #09f;
-  height: 50px; }
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000; }
 
 .header__link {
   margin-right: 0.5rem; }
@@ -12,7 +15,8 @@
   @media (max-width: 768px) {
     .header__link-logo {
       position: relative;
-      top: 10px; } }
+      top: 10px;
+      z-index: 1000; } }
 
 .header__nav {
   position: relative;
@@ -169,7 +173,9 @@
 
 .menu-wrap .toggler:checked ~ .menu > div > div {
   opacity: 1;
-  transition: opacity 0.4s ease 0.4s; }
+  transition: opacity 0.4s ease 0.4s;
+  width: 100%;
+  position: relative; }
 
 .menu-wrap .menu {
   position: fixed;
@@ -186,8 +192,8 @@
 .menu-wrap .menu > div {
   background: var(--overlay-color);
   border-radius: 50%;
-  width: 2000vw;
-  height: 140vw;
+  width: 2200vw;
+  height: 1000vw;
   display: flex;
   flex: none;
   align-items: flex-start;
@@ -200,7 +206,7 @@
 
 .menu-wrap .menu > div > div {
   text-align: center;
-  max-width: 90vw;
+  max-width: 100vw;
   max-height: 100vh;
   opacity: 0;
   transition: opacity 0.4s ease; }
@@ -222,7 +228,7 @@
     .menu-wrap {
       background-color: #09f;
       position: relative;
-      z-index: 1000;
+      z-index: 999;
       right: 0;
       display: block; }
       .menu-wrap::before {
@@ -239,21 +245,44 @@
         border-radius: 50%; } }
 
 .menu__title {
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  font-family: 'PT Sans';
+  font-weight: 400; }
 
 .menu__container {
-  margin-top: 70rem; }
+  margin-top: 75rem; }
   @media (max-width: 499px) {
     .menu__container {
-      margin-top: 25rem; } }
+      margin-top: 35rem; } }
+  @media (max-width: 400px) {
+    .menu__container {
+      margin-top: 15rem; } }
 
 .menu__container-item {
   list-style: none;
   color: #fff;
-  font-size: 1.5rem;
-  padding: 1rem; }
+  font-size: 2rem;
+  font-family: 'PT Sans';
+  padding: 2rem;
+  width: 100%;
+  position: relative; }
+  .menu__container-item::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-bottom: 2px solid #1c70b8;
+    height: 1px;
+    width: 200%;
+    left: -100px;
+    bottom: -3px; }
   .menu__container-item > a {
-    color: #fff; }
+    color: #fff;
+    font-family: 'PT Sans';
+    font-weight: 400; }
+
+.menu__container {
+  position: absolute;
+  top: 0; }
 
 .container {
   max-width: 1230px;
