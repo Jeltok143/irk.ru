@@ -191,7 +191,8 @@
       display: none; } }
 
 .main__nav-link {
-  position: relative; }
+  position: relative;
+  color: #000; }
   .main__nav-link:hover {
     color: red; }
 
