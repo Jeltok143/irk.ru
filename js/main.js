@@ -1,5 +1,9 @@
 "use strict";
 
+window.onload = function () {
+  document.documentElement.style.opacity = '1';
+};
+
 var swiper = new Swiper('.swiper-container', {
   // Optional parameters
   direction: 'horizontal',
@@ -37,6 +41,23 @@ var swiper = new Swiper('.swiper-container', {
   mousewheel: {
     sensitivity: 1,
     eventsTarget: ".swiper-slide"
+  }
+}); // Fixed Header 
+
+var header = document.querySelector('.header');
+var first = document.querySelector('.main__slider');
+var headerHeight = header.offsetHeight;
+var firstHeight = first.offsetHeight;
+var lastScrollTop = 0;
+window.addEventListener('scroll', function () {
+  var scrollDistance = window.scrollY;
+
+  if (scrollDistance >= firstHeight + headerHeight) {
+    header.classList.add('header--fixed');
+    first.style.marginTop = "".concat(headerHeight, "px");
+  } else {
+    header.classList.remove('header--fixed');
+    first.style.marginTop = null;
   }
 });
 //# sourceMappingURL=main.js.map
