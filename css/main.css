@@ -1046,12 +1046,6 @@
     .cinema__left {
       width: 100%; } }
 
-.cinema__right {
-  width: 30%; }
-  @media (max-width: 991px) {
-    .cinema__right {
-      width: 100%; } }
-
 .cinema__item {
   margin-top: 4rem;
   margin-bottom: 4rem; }
@@ -1159,7 +1153,7 @@
   background: none;
   border: none;
   color: #000;
-  padding: .2rem .7rem;
+  padding: 0.2rem 0.7rem;
   border: 1px solid #ccc;
   border-radius: 2px;
   margin-right: 1rem;
@@ -1173,6 +1167,48 @@
   @media (max-width: 768px) {
     .cinema__date-item {
       margin-bottom: 1rem; } }
+
+.cinema__right {
+  width: 30%; }
+  @media (max-width: 991px) {
+    .cinema__right {
+      width: 100%; } }
+
+.cinema__right-block {
+  display: flex;
+  flex-wrap: wrap; }
+
+.cinema__right-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  margin-right: 2rem;
+  width: calc(50% - 20px); }
+  @media (max-width: 499px) {
+    .cinema__right-item {
+      width: 100%;
+      margin-right: -2rem; } }
+
+.cinema__right-title {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  margin-top: 1rem; }
+  .cinema__right-title:hover {
+    color: red; }
+
+.cinema__right-text {
+  font-size: 16px;
+  color: #000;
+  font-weight: 400; }
+
+.cinema__right-comment {
+  font-size: 14px;
+  color: #999;
+  margin-top: 1rem; }
+  .cinema__right-comment:hover {
+    color: red; }
 
 .calendar__nav {
   display: flex; }
