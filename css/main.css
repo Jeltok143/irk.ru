@@ -7,7 +7,7 @@
     width: 100%;
     z-index: 1000;
     left: 0;
-    top: 0; }
+    top: -50px; }
 
 .header__link {
   margin-right: 0.5rem; }
@@ -1032,5 +1032,53 @@
   font-size: 1.4rem; }
   .footer__credits-name:hover {
     color: #fff; }
+
+.cinema__wrapper {
+  display: flex; }
+
+.calendar__nav {
+  display: flex; }
+
+.calendar__item {
+  border: solid 1px #ccc;
+  margin-left: -0.1rem; }
+  .calendar__item:first-child {
+    margin-left: 0; }
+  .calendar__item:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; }
+
+.calendar__link {
+  display: block;
+  width: 45px;
+  font-size: 1.6rem;
+  color: #000;
+  padding: 1.1rem 1.5rem; }
+  .calendar__link--active {
+    width: 85px;
+    background-color: #fff0ba;
+    font-weight: 700; }
+  .calendar__link--weekend {
+    color: red; }
+
+.calendar__next {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: 8px; }
+
+.calendar__sort {
+  margin-left: 4rem;
+  display: flex; }
+
+.calendar__sort-cat {
+  margin-right: 0.5rem;
+  font-size: 1.6rem;
+  color: #0095fc;
+  border-bottom: dotted 1px #0095fc; }
+  .calendar__sort-cat--active {
+    font-weight: 700;
+    color: #000;
+    border: none; }
 
 /*# sourceMappingURL=main.css.map */
