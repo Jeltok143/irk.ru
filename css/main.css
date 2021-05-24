@@ -225,7 +225,7 @@
     .main__nav-item {
       margin-right: 1rem;
       font-size: 1.5rem; } }
-  @media (max-width: 499px) {
+  @media (max-width: 768px) {
     .main__nav-item:nth-child(4) {
       display: none; }
     .main__nav-item:nth-child(5) {
@@ -265,7 +265,7 @@
   border: none;
   cursor: pointer;
   background: none; }
-  @media (max-width: 499px) {
+  @media (max-width: 768px) {
     .main__nav-search {
       display: none; } }
 
@@ -280,7 +280,7 @@
   @media (max-width: 768px) {
     .main__mobile {
       display: block;
-      right: 0;
+      right: 0px;
       width: 100%; } }
 
 .main__mobile-wrapper {
@@ -297,7 +297,11 @@
   display: none; }
   @media (max-width: 768px) {
     .main__mobile-btn {
-      display: block; } }
+      display: block;
+      right: -50px; } }
+  @media (max-width: 499px) {
+    .main__mobile-btn {
+      right: 0; } }
 
 .main__mobile-menu {
   display: none;
@@ -1211,7 +1215,8 @@
     color: red; }
 
 .calendar__nav {
-  display: flex; }
+  display: flex;
+  align-items: center; }
   @media (max-width: 768px) {
     .calendar__nav {
       flex-wrap: wrap; } }
@@ -1273,6 +1278,9 @@
       width: 100%; } }
 
 .calendar__sort-cat {
+  display: flex;
+  align-items: center;
+  height: 15px;
   margin-right: 0.5rem;
   font-size: 1.6rem;
   color: #0095fc;
