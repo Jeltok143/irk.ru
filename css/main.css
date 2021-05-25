@@ -1143,7 +1143,8 @@
 
 .cinema__dates {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 2rem; }
 
 .cinema__name {
   font-size: 1.8rem;
@@ -1221,6 +1222,9 @@
   margin-top: 1rem; }
   .cinema__right-comment:hover {
     color: red; }
+
+.cinema__right-link > img {
+  width: 100%; }
 
 .calendar__nav {
   display: flex;
