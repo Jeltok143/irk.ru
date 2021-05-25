@@ -921,6 +921,180 @@
     background: #0c87db;
     border-color: #0c87db; }
 
+.soon__film {
+  margin-top: 1rem; }
+
+.soon__film-title {
+  font-size: 4.5rem;
+  color: #000;
+  margin-top: 1rem;
+  margin-bottom: 2rem; }
+
+.soon__film-inner {
+  display: flex;
+  flex-direction: column; }
+
+.soon__film-item {
+  position: relative;
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  .soon__film-item:nth-child(1) {
+    background-color: #84986d; }
+  .soon__film-item:nth-child(2) {
+    background-color: #dbd9a9; }
+  .soon__film-item:nth-child(3) {
+    background-color: #caae7c; }
+  .soon__film-item:nth-child(4) {
+    background-color: #f5f3e4; }
+  .soon__film-item:nth-child(5) {
+    background-color: #5381a6; }
+  .soon__film-item:nth-child(6) {
+    background-color: #84986d; }
+  .soon__film-item:nth-child(7) {
+    background-color: #fff0be; }
+  .soon__film-item:nth-child(8) {
+    background-color: #d29a77; }
+  @media (max-width: 768px) {
+    .soon__film-item {
+      margin-left: -1.5rem;
+      margin-right: -1.5rem; } }
+  @media (max-width: 499px) {
+    .soon__film-item {
+      flex-wrap: wrap; } }
+
+.soon__film-date {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  font-size: 6rem;
+  color: #000;
+  opacity: .45;
+  font-weight: 700;
+  width: 40px;
+  line-height: .7;
+  transform: rotate(270deg); }
+  @media (max-width: 991px) {
+    .soon__film-date {
+      font-size: 5rem; } }
+  @media (max-width: 768px) {
+    .soon__film-date {
+      font-size: 3rem;
+      top: 10px;
+      left: 10px; } }
+  @media (max-width: 499px) {
+    .soon__film-date {
+      left: 5;
+      top: 13px; } }
+
+.soon__film-number {
+  margin-bottom: 2rem; }
+
+.soon__film-mounth {
+  align-self: flex-end;
+  position: relative;
+  right: -35px; }
+  @media (max-width: 991px) {
+    .soon__film-mounth {
+      right: -15px; } }
+  @media (max-width: 768px) {
+    .soon__film-mounth {
+      right: 5px; } }
+
+.soon__film-photo {
+  margin-left: 12rem;
+  margin-right: 2rem; }
+  @media (max-width: 768px) {
+    .soon__film-photo {
+      margin-left: 7rem; } }
+  @media (max-width: 499px) {
+    .soon__film-photo {
+      margin-left: 5.5rem; } }
+
+.soon__film-title {
+  display: flex;
+  align-items: center;
+  height: 40px; }
+  .soon__film-title > a {
+    color: #0e5aaa;
+    font-size: 2.5rem; }
+    .soon__film-title > a:hover {
+      color: red; }
+    @media (max-width: 991px) {
+      .soon__film-title > a {
+        font-size: 2rem; } }
+    @media (max-width: 768px) {
+      .soon__film-title > a {
+        font-size: 1.5rem; } }
+    @media (max-width: 499px) {
+      .soon__film-title > a {
+        font-size: 1.4rem;
+        margin-left: 5.2rem; } }
+  @media (max-width: 991px) {
+    .soon__film-title {
+      flex-wrap: wrap; } }
+  @media (max-width: 499px) {
+    .soon__film-title {
+      margin-bottom: 3rem; } }
+
+.soon__film-age {
+  margin-left: 1rem;
+  font-size: 1.4rem;
+  color: #000;
+  border: 1px solid #000;
+  font-family: 'PT Sans';
+  font-weight: 700;
+  padding: .3rem .4rem;
+  height: 20px;
+  margin-top: 0.1rem; }
+  @media (max-width: 991px) {
+    .soon__film-age {
+      position: absolute;
+      left: 15px;
+      bottom: 15px; } }
+
+.soon__film-about {
+  position: absolute;
+  right: 75px;
+  bottom: 15px;
+  display: flex;
+  flex-direction: column; }
+  @media (max-width: 768px) {
+    .soon__film-about {
+      right: 15px; } }
+  @media (max-width: 499px) {
+    .soon__film-about {
+      flex-direction: row;
+      bottom: 10px;
+      right: 10px; } }
+
+.soon__film-type {
+  font-size: 1.4rem;
+  color: #000;
+  margin-bottom: 3rem;
+  font-weight: 400; }
+  @media (max-width: 768px) {
+    .soon__film-type {
+      margin-bottom: 1rem; } }
+  @media (max-width: 499px) {
+    .soon__film-type {
+      font-size: 1.3rem;
+      margin-right: 1rem; } }
+
+.soon__film-price {
+  font-size: 1.8rem;
+  color: #000;
+  font-weight: 700; }
+  @media (max-width: 768px) {
+    .soon__film-price {
+      font-size: 1.6rem; } }
+  @media (max-width: 499px) {
+    .soon__film-price {
+      font-size: 1.5rem; } }
+
 .footer {
   background-color: #202020;
   padding-top: 2.5rem;
