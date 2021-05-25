@@ -1893,7 +1893,9 @@
   display: flex; }
   @media (max-width: 768px) {
     .calendar__nav-inner {
-      width: 100%; } }
+      width: 100%;
+      margin-bottom: 1rem;
+      margin-top: 1rem; } }
 
 .calendar__item {
   border: solid 1px #ccc;
