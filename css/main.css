@@ -387,6 +387,9 @@
 .swiper__buttons {
   display: flex;
   align-items: center; }
+  @media (max-width: 499px) {
+    .swiper__buttons {
+      display: none; } }
 
 .swiper-button-prev {
   background-image: url(../img/icons/right-arrow.png);
@@ -447,7 +450,7 @@
       left: 20px; } }
   @media (max-width: 499px) {
     .slider__poster-info {
-      top: -5px; } }
+      top: 5px; } }
 
 .slider__poster-title {
   color: #fff;
@@ -458,8 +461,7 @@
       font-size: 2.5rem; } }
   @media (max-width: 499px) {
     .slider__poster-title {
-      font-size: 1.3rem;
-      margin-bottom: -1rem; } }
+      font-size: 1.5rem; } }
 
 .slider__poster-desc {
   font-size: 1.8rem;
@@ -470,7 +472,7 @@
       font-size: 1.5rem; } }
   @media (max-width: 499px) {
     .slider__poster-desc {
-      font-size: 1.2rem; } }
+      display: none; } }
 
 .slider__poster-bottom {
   display: flex;
@@ -488,7 +490,7 @@
       left: 20px; } }
   @media (max-width: 499px) {
     .slider__poster-bottom {
-      bottom: -5px; } }
+      bottom: 5px; } }
 
 .slider__poster-number {
   font-size: 3rem;
