@@ -935,7 +935,8 @@
 
 .soon__film-inner {
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-bottom: 4rem; }
 
 .soon__film-item {
   position: relative;
