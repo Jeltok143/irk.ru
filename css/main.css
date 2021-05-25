@@ -118,7 +118,8 @@
   background-color: #0084d9;
   z-index: 999;
   top: 0;
-  left: 0; }
+  left: 0;
+  overflow: auto; }
   .header__mobile-menu--opened {
     display: block; }
   .header__mobile-menu--active {
@@ -134,7 +135,7 @@
     fill: #fff; }
 
 .header__mobile-close {
-  position: absolute;
+  position: fixed;
   right: 15px;
   top: 13px;
   border: none;
@@ -146,6 +147,9 @@
 .header__mobile-ul {
   margin-top: 5rem;
   text-align: center; }
+  @media (max-width: 499px) {
+    .header__mobile-ul {
+      margin-top: 4rem; } }
 
 .header__mobile-item {
   border-bottom: 2px solid #1c70b8; }
@@ -1183,10 +1187,12 @@
 .cinema__right-block {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column; }
+  flex-direction: column;
+  margin-left: 2rem; }
   @media (max-width: 991px) {
     .cinema__right-block {
-      flex-direction: row; } }
+      flex-direction: row;
+      margin-left: 0; } }
 
 .cinema__right-item {
   display: flex;
@@ -1226,6 +1232,205 @@
 .cinema__right-link > img {
   width: 100%; }
 
+.cinema__card-title {
+  font-size: 3rem;
+  color: #000; }
+
+.cinema__card-labels {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center; }
+  @media (max-width: 768px) {
+    .cinema__card-labels {
+      flex-wrap: wrap; } }
+
+.cinema__card-buy {
+  background-color: #ee721a;
+  padding: 0.8rem 1.3rem;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: 1rem;
+  font-size: 1.6rem; }
+  @media (max-width: 768px) {
+    .cinema__card-buy {
+      margin-right: 2rem;
+      margin-bottom: 2rem; } }
+
+.cinema__card-return {
+  background-color: #fff;
+  color: #000;
+  padding: 0.8rem 1.3rem;
+  border-radius: 5px;
+  border: 1px solid #000;
+  margin-right: 1rem;
+  font-size: 1.6rem; }
+  @media (max-width: 768px) {
+    .cinema__card-return {
+      margin-right: 2rem;
+      margin-bottom: 2rem; } }
+  .cinema__card-return:hover {
+    background-color: #ee721a; }
+
+.cinema__card-comment {
+  background-color: #fff;
+  color: #000;
+  padding: 0.8rem 1.3rem;
+  border-radius: 5px;
+  border: 1px solid #000;
+  margin-right: 1rem;
+  font-size: 1.6rem; }
+  @media (max-width: 768px) {
+    .cinema__card-comment {
+      margin-right: 2rem;
+      margin-bottom: 2rem; } }
+  .cinema__card-comment:hover {
+    border-color: #ee721a; }
+
+.cinema__card-time {
+  font-size: 1.6rem;
+  color: #000;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 0.8rem 1.3rem;
+  border: 1px solid transparent;
+  margin-right: 1rem;
+  font-weight: 700; }
+  @media (max-width: 768px) {
+    .cinema__card-time {
+      margin-right: 2rem;
+      margin-bottom: 2rem; } }
+
+.cinema__card-age {
+  font-size: 1.6rem;
+  color: #000;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 0.8rem 1.3rem;
+  border: 1px solid transparent;
+  margin-right: 1rem;
+  font-weight: 700; }
+  @media (max-width: 768px) {
+    .cinema__card-age {
+      margin-right: 2rem;
+      margin-bottom: 2rem; } }
+
+.cinema__card-type {
+  color: #999;
+  font-size: 1.6rem;
+  margin-right: 1rem; }
+  @media (max-width: 768px) {
+    .cinema__card-type {
+      margin-right: 2rem;
+      margin-bottom: 2rem; } }
+
+.cinema__card-country {
+  color: #999;
+  font-size: 1.6rem; }
+  @media (max-width: 768px) {
+    .cinema__card-country {
+      margin-right: 2rem;
+      margin-bottom: 2rem; } }
+
+.cinema__card-video > iframe {
+  width: 100%;
+  height: 500px; }
+
+@media (max-width: 768px) {
+  .cinema__card-video > iframe {
+    width: 100%;
+    height: 350px; } }
+
+.cinema__card__desc {
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 991px) {
+    .cinema__card__desc {
+      flex-wrap: wrap; } }
+
+.cinema__desc-left {
+  width: 65%; }
+  @media (max-width: 991px) {
+    .cinema__desc-left {
+      width: 100%; } }
+
+.cinema__desc-right {
+  margin-top: 2rem;
+  width: 30%; }
+  @media (max-width: 991px) {
+    .cinema__desc-right {
+      margin-bottom: 2rem; } }
+
+.cinema__desc-text {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  margin-bottom: 3rem; }
+  .cinema__desc-text:last-child {
+    margin-bottom: 0; }
+
+.cinema__desc-right {
+  flex-direction: column;
+  display: flex; }
+  @media (max-width: 991px) {
+    .cinema__desc-right {
+      width: 100%;
+      align-items: center; } }
+
+.cinema__share {
+  display: flex; }
+  .cinema__share > a {
+    margin-right: 1rem; }
+    .cinema__share > a:last-child {
+      margin-right: 0; }
+
+.cinema__desc-share {
+  width: 34px;
+  height: 34px; }
+
+.cinema__authors {
+  margin-top: 2rem; }
+  @media (max-width: 991px) {
+    .cinema__authors {
+      display: flex; }
+      .cinema__authors > div {
+        margin-right: 2rem;
+        margin-left: 2rem; } }
+
+.cinema__author {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem; }
+
+.cinema__author-name {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 3rem; }
+  .cinema__author-name:last-child {
+    margin-bottom: 0; }
+
+.cinema__actors {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+  margin-top: 1rem; }
+  @media (max-width: 991px) {
+    .cinema__actors {
+      margin-top: 0; } }
+
+.cinema__actors-name {
+  font-size: 1.4rem;
+  color: #000;
+  margin-bottom: 0.5rem;
+  font-weight: 400; }
+  .cinema__actors-name:last-child {
+    margin-bottom: 0; }
+
+.cinema__film-link {
+  font-size: 1.4rem; }
+
 .calendar__nav {
   display: flex;
   align-items: center; }
@@ -1244,7 +1449,13 @@
   margin-left: -0.1rem; }
   .calendar__item:first-child {
     margin-left: 0; }
-  .calendar__item:last-child {
+  .calendar__item--btn-1 {
+    transform: rotate(180deg);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; }
+    .calendar__item--btn-1 > a > svg {
+      top: 10px; }
+  .calendar__item--btn-2 {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px; }
 
@@ -1273,9 +1484,9 @@
 
 .calendar__next {
   width: 15px;
-  height: 15px;
+  height: 14px;
   position: relative;
-  top: 8px; }
+  top: 9px; }
   @media (max-width: 499px) {
     .calendar__next {
       top: 7px; } }
