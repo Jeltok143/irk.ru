@@ -929,6 +929,9 @@
   color: #000;
   margin-top: 1rem;
   margin-bottom: 2rem; }
+  @media (max-width: 768px) {
+    .soon__film-title {
+      width: 100%; } }
 
 .soon__film-inner {
   display: flex;
@@ -1094,6 +1097,107 @@
   @media (max-width: 499px) {
     .soon__film-price {
       font-size: 1.5rem; } }
+
+.soon__film-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  @media (max-width: 768px) {
+    .soon__film-top {
+      flex-wrap: wrap; } }
+
+.soon__film-left {
+  display: flex;
+  align-items: center; }
+  @media (max-width: 768px) {
+    .soon__film-left {
+      order: 2;
+      flex-wrap: wrap; } }
+
+.soon__film-right {
+  display: flex;
+  align-items: center; }
+  @media (max-width: 768px) {
+    .soon__film-right {
+      order: 1;
+      width: 100%; } }
+
+.soon__film-sort {
+  margin-left: 2rem; }
+  @media (max-width: 768px) {
+    .soon__film-sort {
+      margin-left: 0;
+      margin-bottom: 2rem; } }
+
+.soon__film-btn {
+  height: 30px;
+  line-height: 29px;
+  color: #5c5c5c;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: solid 0 #cecece;
+  border-right: solid 1px #dedede;
+  border-left: solid 1px #fff;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 1px 0 #c7c4c4;
+  margin: 0;
+  color: #5c5c5c;
+  font-size: 1.4rem;
+  margin-left: -0.2rem; }
+  .soon__film-btn--active {
+    background-color: #f5f3e4;
+    box-shadow: inset 0 2px 6px #856d1d; }
+  .soon__film-btn:first-child {
+    margin-left: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; }
+  .soon__film-btn:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; }
+  @media (max-width: 499px) {
+    .soon__film-btn {
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: 1.1rem; } }
+
+.soon__film-search {
+  font-size: 1.5rem;
+  color: #000;
+  border: none;
+  outline: none;
+  border: 1px solid #000;
+  border-right: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  position: relative;
+  left: 5px; }
+  .soon__film-search::-moz-placeholder {
+    font-size: 1.5rem;
+    color: #999; }
+  .soon__film-search:-ms-input-placeholder {
+    font-size: 1.5rem;
+    color: #999; }
+  .soon__film-search::placeholder {
+    font-size: 1.5rem;
+    color: #999; }
+  @media (max-width: 768px) {
+    .soon__film-search {
+      width: 100%; } }
+
+.soon__search-btn {
+  background: none;
+  cursor: pointer;
+  border-width: 1px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-left: none; }
+
+.soon__film-icon {
+  position: relative;
+  top: 1px;
+  width: 15px;
+  height: 15px; }
 
 .footer {
   background-color: #202020;
