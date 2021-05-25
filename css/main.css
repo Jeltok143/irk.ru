@@ -836,7 +836,8 @@
 .soon__item-title {
   position: relative;
   margin-top: 1.2rem;
-  display: flex; }
+  display: flex;
+  margin-bottom: 1rem; }
   .soon__item-title > a {
     color: #000;
     font-size: 1.6rem;
@@ -866,6 +867,9 @@
     fill: red; }
   .soon__comments-link:hover > .soon__comments-count {
     color: red; }
+  @media (max-width: 499px) {
+    .soon__comments-link {
+      margin-top: 0; } }
 
 .soon__item-icon {
   fill: #999999;
@@ -1097,7 +1101,8 @@
 .cinema__block-marks {
   margin-top: 2rem;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
 
 .cinema__buy-ticket {
   background-color: #ee721a;
@@ -1118,8 +1123,10 @@
 
 .cinema__block-comment {
   display: flex;
-  align-items: center;
-  margin-bottom: 2rem; }
+  align-items: center; }
+  @media (max-width: 499px) {
+    .cinema__block-comment {
+      margin-top: 2rem; } }
 
 .cinema__buy-type {
   font-size: 16px;
