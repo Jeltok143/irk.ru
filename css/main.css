@@ -1177,6 +1177,9 @@
   @media (max-width: 768px) {
     .cinema__date-item {
       margin-bottom: 1rem; } }
+  @media (max-width: 499px) {
+    .cinema__date-item {
+      margin-right: 0; } }
 
 .cinema__right {
   width: 30%; }
@@ -1368,6 +1371,18 @@
   .cinema__desc-text:last-child {
     margin-bottom: 0; }
 
+.cinema__desc-date {
+  margin-top: 1rem;
+  margin-bottom: 3px;
+  font-weight: 700;
+  font-size: 1.8rem; }
+
+.cinema__desc-error {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  color: #999; }
+
 .cinema__desc-right {
   flex-direction: column;
   display: flex; }
@@ -1431,6 +1446,30 @@
 .cinema__film-link {
   font-size: 1.4rem; }
 
+.cinema__dates {
+  display: flex; }
+  @media (max-width: 991px) {
+    .cinema__dates {
+      width: 100%;
+      justify-content: space-around; } }
+
+.cinema__desc-dates {
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.cinema__price {
+  margin-left: 2rem;
+  white-space: nowrap; }
+  @media (max-width: 991px) {
+    .cinema__price {
+      margin-left: 0;
+      white-space: normal; } }
+
+.cinema__price-title {
+  font-size: 1.4rem;
+  color: #000;
+  font-weight: 400; }
+
 .calendar__nav {
   display: flex;
   align-items: center; }
@@ -1455,9 +1494,19 @@
     border-bottom-right-radius: 5px; }
     .calendar__item--btn-1 > a > svg {
       top: 10px; }
+      @media (max-width: 499px) {
+        .calendar__item--btn-1 > a > svg {
+          width: 23px;
+          left: -10px;
+          top: 7px; } }
   .calendar__item--btn-2 {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px; }
+    @media (max-width: 499px) {
+      .calendar__item--btn-2 > a > svg {
+        width: 23px;
+        left: -10px;
+        top: 7px; } }
 
 .calendar__link {
   text-align: center;
@@ -1470,8 +1519,8 @@
     color: red; }
   @media (max-width: 499px) {
     .calendar__link {
-      width: 35px;
-      font-size: 1.3rem;
+      width: 33px;
+      font-size: 1.2rem;
       padding: 0.5rem 1.4rem; } }
   .calendar__link--active {
     width: 85px;
@@ -1479,8 +1528,8 @@
     font-weight: 700; }
     @media (max-width: 499px) {
       .calendar__link--active {
-        width: 65px;
-        font-size: 1.3rem; } }
+        width: 62px;
+        font-size: 1.2rem; } }
 
 .calendar__next {
   width: 15px;
