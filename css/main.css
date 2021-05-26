@@ -178,7 +178,8 @@
   border-bottom: solid 1px #f2f2f2; }
   @media (max-width: 499px) {
     .main__nav {
-      border-bottom: none; } }
+      border-bottom: none;
+      margin-bottom: 1rem; } }
 
 .main__nav-left {
   display: flex;
@@ -222,22 +223,27 @@
       width: 100%;
       border-bottom: 2px solid #0096ff;
       bottom: -26px; }
+      @media (max-width: 768px) {
+        .main__nav-item--active::after {
+          bottom: -20px; } }
+      @media (max-width: 499px) {
+        .main__nav-item--active::after {
+          bottom: -15px; } }
   @media (max-width: 991px) {
     .main__nav-item {
       font-size: 1.7rem; } }
   @media (max-width: 768px) {
     .main__nav-item {
-      margin-right: 1rem;
-      font-size: 1.5rem; } }
-  @media (max-width: 768px) {
-    .main__nav-item:nth-child(4) {
-      display: none; }
-    .main__nav-item:nth-child(5) {
-      display: none; }
-    .main__nav-item:nth-child(6) {
-      display: none; }
-    .main__nav-item:nth-child(4) {
-      display: none; } }
+      font-size: 1.5rem;
+      margin-right: 1rem; }
+      .main__nav-item:nth-child(4) {
+        display: none; }
+      .main__nav-item:nth-child(5) {
+        display: none; }
+      .main__nav-item:nth-child(6) {
+        display: none; }
+      .main__nav-item:nth-child(4) {
+        display: none; } }
 
 .main__nav-word {
   font-size: 1.8rem;
@@ -285,7 +291,8 @@
     .main__mobile {
       display: block;
       right: 0px;
-      width: 100%; } }
+      width: 100%;
+      order: 5; } }
 
 .main__mobile-wrapper {
   position: relative;
@@ -302,10 +309,12 @@
   @media (max-width: 768px) {
     .main__mobile-btn {
       display: block;
-      right: -50px; } }
+      right: auto;
+      left: -20px; } }
   @media (max-width: 499px) {
     .main__mobile-btn {
-      right: 0; } }
+      right: auto;
+      left: -20px; } }
 
 .main__mobile-menu {
   display: none;
@@ -569,12 +578,12 @@
       margin: 2rem 0rem; } }
 
 .tabs__nav {
-  display: flex; }
+  display: flex;
+  justify-content: space-around; }
 
 .tabs__nav-btn {
   display: flex;
   align-items: center;
-  width: 100%;
   font-size: 20px;
   border: 0;
   cursor: pointer;
@@ -1016,7 +1025,7 @@
       margin-left: 7rem; } }
   @media (max-width: 499px) {
     .soon__film-photo {
-      margin-left: 5.5rem; } }
+      margin-left: 6.5rem; } }
 
 .soon__film-title {
   display: flex;
@@ -1036,7 +1045,9 @@
     @media (max-width: 499px) {
       .soon__film-title > a {
         font-size: 1.4rem;
-        margin-left: 5.2rem; } }
+        margin-left: 6.5rem;
+        color: #000;
+        font-weight: 700; } }
   @media (max-width: 991px) {
     .soon__film-title {
       flex-wrap: wrap; } }
@@ -1073,7 +1084,9 @@
     .soon__film-about {
       flex-direction: row;
       bottom: 10px;
-      right: 10px; } }
+      right: 10px;
+      align-items: center;
+      margin-bottom: 1rem; } }
 
 .soon__film-type {
   font-size: 1.4rem;
@@ -1085,8 +1098,8 @@
       margin-bottom: 1rem; } }
   @media (max-width: 499px) {
     .soon__film-type {
-      font-size: 1.3rem;
-      margin-right: 1rem; } }
+      margin-right: 1rem;
+      margin-bottom: 0; } }
 
 .soon__film-price {
   font-size: 1.8rem;
@@ -1352,14 +1365,22 @@
       flex-wrap: wrap; } }
 
 .cinema__block-photo {
-  width: 40%; }
+  width: 40%;
+  margin-right: 2rem; }
   @media (max-width: 991px) {
-    .cinema__block-photo {
-      margin-right: 1rem; } }
+    .cinema__block-photo a > img {
+      width: 100%; } }
   @media (max-width: 768px) {
     .cinema__block-photo {
       width: 100%;
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem; }
+      .cinema__block-photo a > img {
+        width: auto; } }
+  @media (max-width: 499px) {
+    .cinema__block-photo {
+      margin-right: 0; }
+      .cinema__block-photo a > img {
+        width: 100%; } }
 
 .cinema__block-info {
   width: 60%; }
@@ -1448,12 +1469,18 @@
   @media (max-width: 991px) {
     .cinema__dates {
       width: 100%; } }
+  @media (max-width: 768px) {
+    .cinema__dates {
+      flex-direction: column; } }
 
 .cinema__name {
   font-size: 1.8rem;
   font-weight: 700;
   color: #000;
   margin-right: 3rem; }
+  @media (max-width: 768px) {
+    .cinema__name {
+      margin-bottom: 1rem; } }
   @media (max-width: 499px) {
     .cinema__name {
       margin-right: 1rem; } }
@@ -1474,9 +1501,12 @@
     cursor: pointer; }
   .cinema__date-item:last-child {
     margin-right: 0; }
+  @media (max-width: 768px) {
+    .cinema__date-item {
+      margin-right: 1rem; } }
   @media (max-width: 499px) {
     .cinema__date-item {
-      margin-right: 0; } }
+      margin-right: 1rem; } }
 
 .cinema__right {
   width: 30%; }
@@ -1882,6 +1912,51 @@
   .cinema__info-answers > a:hover {
     color: red; }
 
+.cinema__comments-drop {
+  margin-bottom: 2rem; }
+
+.cinema__comments-area {
+  width: 100%;
+  height: 15rem;
+  margin-bottom: 1rem; }
+
+.cinema__drop-bottom {
+  display: flex; }
+  @media (max-width: 499px) {
+    .cinema__drop-bottom {
+      flex-direction: column; } }
+
+.cinema__drop-btn {
+  background: #bbb;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.6rem;
+  color: #fff;
+  padding: .5rem 2rem;
+  margin-right: 2rem; }
+  @media (max-width: 499px) {
+    .cinema__drop-btn {
+      margin-right: 0;
+      margin-bottom: 1rem; } }
+
+.cinema__drop-warning {
+  width: 50%;
+  font-size: 1.4rem;
+  color: #999; }
+  .cinema__drop-warning > a {
+    color: inherit; }
+  @media (max-width: 768px) {
+    .cinema__drop-warning {
+      width: 100%; } }
+
+.cinema__reply-message {
+  font-style: italic;
+  font-size: 1.3rem;
+  margin-bottom: -.5rem; }
+
+.cinema__info-reply {
+  margin-left: 1rem; }
+
 .calendar__nav {
   display: flex;
   align-items: center; }
@@ -1899,7 +1974,8 @@
 
 .calendar__item {
   border: solid 1px #ccc;
-  margin-left: -0.1rem; }
+  margin-left: -0.1rem;
+  padding: 1.1rem 1.5rem; }
   .calendar__item:first-child {
     margin-left: 0; }
   .calendar__item--btn-1 {
@@ -1907,52 +1983,60 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px; }
     .calendar__item--btn-1 > a > svg {
-      top: 10px; }
+      top: 12px; }
+      @media (max-width: 991px) {
+        .calendar__item--btn-1 > a > svg {
+          top: auto; } }
       @media (max-width: 499px) {
         .calendar__item--btn-1 > a > svg {
-          width: 23px;
-          left: -10px;
-          top: 7px; } }
+          width: 23px; } }
   .calendar__item--btn-2 {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px; }
-    @media (max-width: 499px) {
-      .calendar__item--btn-2 > a > svg {
-        width: 23px;
-        left: -10px;
-        top: 7px; } }
+    .calendar__item--btn-2 > a > svg {
+      top: 8px; }
+      @media (max-width: 991px) {
+        .calendar__item--btn-2 > a > svg {
+          top: auto; } }
+      @media (max-width: 499px) {
+        .calendar__item--btn-2 > a > svg {
+          width: 23px;
+          top: 1px; } }
+  .calendar__item--active {
+    background-color: #fff0ba;
+    font-weight: 700; }
+  @media (max-width: 768px) {
+    .calendar__item {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+  @media (max-width: 499px) {
+    .calendar__item {
+      width: auto;
+      padding: 1rem .5rem; } }
 
 .calendar__link {
   text-align: center;
   display: block;
-  width: 45px;
   font-size: 1.6rem;
-  color: #000;
-  padding: 1.1rem 1.5rem; }
+  color: #000; }
   .calendar__link--weekend {
     color: red; }
   @media (max-width: 499px) {
     .calendar__link {
-      width: 33px;
-      font-size: 1.2rem;
-      padding: 0.5rem 1.4rem; } }
+      font-size: 1.2rem; } }
   .calendar__link--active {
-    width: 85px;
     background-color: #fff0ba;
     font-weight: 700; }
     @media (max-width: 499px) {
       .calendar__link--active {
-        width: 62px;
         font-size: 1.2rem; } }
 
 .calendar__next {
   width: 15px;
   height: 14px;
-  position: relative;
-  top: 9px; }
-  @media (max-width: 499px) {
-    .calendar__next {
-      top: 7px; } }
+  position: relative; }
 
 .calendar__sort {
   margin-left: 4rem;
